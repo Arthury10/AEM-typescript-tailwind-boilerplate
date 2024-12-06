@@ -1,0 +1,7 @@
+.some-class {
+  @apply text-white font-bold bg-primary-600;
+
+  & > p {
+    @apply text-red-500;
+  }
+}
