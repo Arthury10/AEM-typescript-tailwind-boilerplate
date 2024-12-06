@@ -10,12 +10,12 @@
   "main": "src/main/webpack/site/main.ts",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
-    "sync": "aemsync -d -p ../apps/src/main/content/jcr_root/apps/vwone",
+    "sync": "aemsync -d -p ../apps/src/main/content/jcr_root/apps/INIT",
     "dev": "webpack --env dev --config ./webpack.dev.js && npm run sync",
     "prod": "webpack --env prod --config ./webpack.prod.js",
     "start": "webpack-dev-server --open --config ./webpack.dev.js",
     "chokidar": "chokidar ./src/main/webpack/**/*",
-    "aemsyncro": "aemsync -w ../apps/src/main/content/jcr_root/apps/vwone",
+    "aemsyncro": "aemsync -w ../apps/src/main/content/jcr_root/apps/INIT",
     "watch": "npm run start & npm run chokidar & npm run aemsyncro"
   },
   "devDependencies": {
